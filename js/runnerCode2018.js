@@ -10,123 +10,125 @@ document.body.addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode === 13) {
         document.querySelector(".submit").click();
-		document.querySelector(".check").click();
-		document.querySelector(".submit1").click();
+	document.querySelector(".check").click();
+	document.querySelector(".submit1").click();
     }
 });
 
 // Code to modify the Google signup square in the middle
 document.querySelector('.submit').onclick = function() {
-      setTimeout(function(){document.querySelector('.title2').innerHTML='S';},0);
-      setTimeout(function(){document.querySelector('.title2').innerHTML='St';},100);
-      setTimeout(function(){document.querySelector('.title2').innerHTML='Ste';},200);
-      setTimeout(function(){document.querySelector('.title2').innerHTML='Step';},300);
-      setTimeout(function(){document.querySelector('.title2').innerHTML='Step ';},400);
-      setTimeout(function(){document.querySelector('.title2').innerHTML='Step 1';},500);
-      setTimeout(function(){document.querySelector('.title2').innerHTML='Step 1.';},600);
-      document.querySelector('.loginBox').innerHTML='<br><br>'+
-                                                        '<img width="20%" style="margin-top:4%;" src="https://nhnet.github.io/img/GoogleLogo.png">'+
-                                                        '<div style="margin-left:20%;margin-top:-5.5%;font-size:15px">, &nbsp;in collaboration with <span style="font-weight:bolder;">🌐NH Net Browser</span></div>'+
-                                                        '<br><br>'+
-                                                        '<h1 class="title1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:40px">Signup</h1><br>'+
-                                                        '<h1 class="title2" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:25px">S</h1>'+
-                                                        '<br><br>'+
-                                                        '<h1 class="point1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:20px">'+
-                                                           '<label for="inp" class="inp">'+
-                                                           '<input style="pointer-events:auto; class="myInputEmail" type="text" id="inp" placeholder="&nbsp;">'+
-                                                           '<span id="emailLabel" class="label">Type in your email address</span>'+
-                                                           '</label><span class="dot">.</span>'+
-                                                        '</h1>'+
-                                                        '<br><br><button class="check">Check if I have an account!</button>'+
-                                                        '<p class="4breaks"><br><br></p>'+
-                                                        '<a href="https://nhnet.github.io/NH_login">'+
-                                                        '    Got an account? Log in!'+
-                                                        '</a>'+
-                                                        '<br><br><br><br>'+
-                                                        '<div class="Submit">'+
-                                                        '    <button style="background:#1b335b;color:grey;" class="submit1">'+
-                                                        '        Continue'+
-                                                        '    </button>'+
-                                                        '</div>'+
+	setTimeout(function(){
+	      setTimeout(function(){document.querySelector('.title2').innerHTML='S';},0);
+	      setTimeout(function(){document.querySelector('.title2').innerHTML='St';},100);
+	      setTimeout(function(){document.querySelector('.title2').innerHTML='Ste';},200);
+	      setTimeout(function(){document.querySelector('.title2').innerHTML='Step';},300);
+	      setTimeout(function(){document.querySelector('.title2').innerHTML='Step ';},400);
+	      setTimeout(function(){document.querySelector('.title2').innerHTML='Step 1';},500);
+	      setTimeout(function(){document.querySelector('.title2').innerHTML='Step 1.';},600);
+	      document.querySelector('.loginBox').innerHTML='<br><br>'+
+								'<img width="20%" style="margin-top:4%;" src="https://nhnet.github.io/img/GoogleLogo.png">'+
+								'<div style="margin-left:20%;margin-top:-5.5%;font-size:15px">, &nbsp;in collaboration with <span style="font-weight:bolder;">🌐NH Net Browser</span></div>'+
+								'<br><br>'+
+								'<h1 class="title1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:40px">Signup</h1><br>'+
+								'<h1 class="title2" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:25px">S</h1>'+
+								'<br><br>'+
+								'<h1 class="point1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:20px">'+
+								   '<label for="inp" class="inp">'+
+								   '<input style="pointer-events:auto; class="myInputEmail" type="text" id="inp" placeholder="&nbsp;">'+
+								   '<span id="emailLabel" class="label">Type in your email address</span>'+
+								   '</label><span class="dot">.</span>'+
+								'</h1>'+
+								'<br><br><button class="check">Check if I have an account!</button>'+
+								'<p class="4breaks"><br><br></p>'+
+								'<a href="https://nhnet.github.io/NH_login">'+
+								'    Got an account? Log in!'+
+								'</a>'+
+								'<br><br><br><br>'+
+								'<div class="Submit">'+
+								'    <button style="background:#1b335b;color:grey;" class="submit1">'+
+								'        Continue'+
+								'    </button>'+
+								'</div>'+
 
-                                                     '</div>';
-      document.querySelector('.check').onclick = function(){
-             var inputEmail = document.querySelector('#inp').value;
-             if (allAccounts.includes(inputEmail)===true){             //check if account actually exists
-                   if(proAccounts.includes(inputEmail)===true){      //check if account is pro
-                       document.querySelector('.check').innerHTML='You have a PRO Account!';
-                       document.querySelector('.check').style.background='#FF5000';
-                       document.querySelector('.check').style.fontSize='15px';
-                       document.querySelector('.check').style.padding='10px 25px 10px 25px';
-                       document.querySelector('.submit1').style.animation='unDisable 1s';
-                       setTimeout(function(){document.querySelector('.submit1').style.background='#4285f4';document.querySelector('.submit1').style.color='white';},1000);
-                       document.querySelector('.submit1').onclick = function(){
-                           setTimeout(function(){document.querySelector('.title2').innerHTML='S';},0);
-                           setTimeout(function(){document.querySelector('.title2').innerHTML='St';},100);
-                           setTimeout(function(){document.querySelector('.title2').innerHTML='Ste';},200);
-                           setTimeout(function(){document.querySelector('.title2').innerHTML='Step';},300);
-                           setTimeout(function(){document.querySelector('.title2').innerHTML='Step ';},400);
-                           setTimeout(function(){document.querySelector('.title2').innerHTML='Step 2';},500);
-                           setTimeout(function(){document.querySelector('.title2').innerHTML='Step 2.';},600);
-                           document.querySelector('.loginBox').innerHTML='<br><br>'+
-                              '<img width="20%" style="margin-top:4%;" src="https://nhnet.github.io/img/GoogleLogo.png">'+
-                              '<div style="margin-left:20%;margin-top:-5.5%;font-size:15px">, &nbsp;in collaboration with <span style="font-weight:bolder;">🌐NH Net Browser</span></div>'+
-                              '<br><br>'+
-                              '<h1 class="title1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:40px">Signup</h1><br>'+
-                              '<h1 class="title2" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:25px">S</h1>'+
-                              '<br><br><br>'+
-                              '<h1 class="point1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:20px">'+
-                                 'Press the button below to complete the signup:<br>'+
-                                 '<div class="g-signin2" data-onsuccess="verifyMyUser" data-onfailure="onFail"></div>'+
-                              '</h1>'+
-                           '</div>';
-                       }
+							     '</div>';
+	      document.querySelector('.check').onclick = function(){
+		     var inputEmail = document.querySelector('#inp').value;
+		     if (allAccounts.includes(inputEmail)===true){             //check if account actually exists
+			   if(proAccounts.includes(inputEmail)===true){      //check if account is pro
+			       document.querySelector('.check').innerHTML='You have a PRO Account!';
+			       document.querySelector('.check').style.background='#FF5000';
+			       document.querySelector('.check').style.fontSize='15px';
+			       document.querySelector('.check').style.padding='10px 25px 10px 25px';
+			       document.querySelector('.submit1').style.animation='unDisable 1s';
+			       setTimeout(function(){document.querySelector('.submit1').style.background='#4285f4';document.querySelector('.submit1').style.color='white';},1000);
+			       document.querySelector('.submit1').onclick = function(){
+				   setTimeout(function(){document.querySelector('.title2').innerHTML='S';},0);
+				   setTimeout(function(){document.querySelector('.title2').innerHTML='St';},100);
+				   setTimeout(function(){document.querySelector('.title2').innerHTML='Ste';},200);
+				   setTimeout(function(){document.querySelector('.title2').innerHTML='Step';},300);
+				   setTimeout(function(){document.querySelector('.title2').innerHTML='Step ';},400);
+				   setTimeout(function(){document.querySelector('.title2').innerHTML='Step 2';},500);
+				   setTimeout(function(){document.querySelector('.title2').innerHTML='Step 2.';},600);
+				   document.querySelector('.loginBox').innerHTML='<br><br>'+
+				      '<img width="20%" style="margin-top:4%;" src="https://nhnet.github.io/img/GoogleLogo.png">'+
+				      '<div style="margin-left:20%;margin-top:-5.5%;font-size:15px">, &nbsp;in collaboration with <span style="font-weight:bolder;">🌐NH Net Browser</span></div>'+
+				      '<br><br>'+
+				      '<h1 class="title1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:40px">Signup</h1><br>'+
+				      '<h1 class="title2" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:25px">S</h1>'+
+				      '<br><br><br>'+
+				      '<h1 class="point1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:20px">'+
+					 'Press the button below to complete the signup:<br>'+
+					 '<div class="g-signin2" data-onsuccess="verifyMyUser" data-onfailure="onFail"></div>'+
+				      '</h1>'+
+				   '</div>';
+			       }
 
-                   }else{
-                       document.querySelector('.check').innerHTML='You have a Basic Account!';
-                       document.querySelector('.check').style.background='#497fbc';
-                       document.querySelector('.check').style.fontSize='15px';
-                       document.querySelector('.check').style.padding='10px 25px 10px 25px';
-                       document.querySelector('.submit1').style.animation='unDisable 1s';
-                       setTimeout(function(){document.querySelector('.submit1').style.background='#4285f4';document.querySelector('.submit1').style.color='white';},1000);
-                       document.querySelector('.submit1').onclick = function(){
-					   		   setTimeout(function(){document.querySelector('.title2').innerHTML='S';},0);
-							   setTimeout(function(){document.querySelector('.title2').innerHTML='St';},100);
-							   setTimeout(function(){document.querySelector('.title2').innerHTML='Ste';},200);
-							   setTimeout(function(){document.querySelector('.title2').innerHTML='Step';},300);
-							   setTimeout(function(){document.querySelector('.title2').innerHTML='Step ';},400);
-							   setTimeout(function(){document.querySelector('.title2').innerHTML='Step 2';},500);
-							   setTimeout(function(){document.querySelector('.title2').innerHTML='Step 2.';},600);
-							   document.querySelector('.loginBox').innerHTML='<br><br>'+
-								  '<img width="20%" style="margin-top:4%;" src="https://nhnet.github.io/img/GoogleLogo.png">'+
-								  '<div style="margin-left:20%;margin-top:-5.5%;font-size:15px">, &nbsp;in collaboration with <span style="font-weight:bolder;">🌐NH Net Browser</span></div>'+
-								  '<br><br>'+
-								  '<h1 class="title1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:40px">Signup</h1><br>'+
-								  '<h1 class="title2" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:25px">S</h1>'+
-								  '<br><br><br>'+
-								  '<h1 class="point1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:20px">'+
-									 'Press the button below to complete the signup:<br>'+
-									 '<div class="g-signin2" data-onsuccess="verifyMyUser" data-onfailure="onFail"></div>'+
-								  '</h1>'+
-							   '</div>';
-					   }
-                   }
-             }else{
-                 document.querySelector('.check').innerHTML='This email does not have an account saved for it!<br>Ask the creator of this browser<br>to add you to the list!';
-                 document.querySelector('.check').style.fontSize='12px';
-                 document.querySelector('.check').style.textAlign='center';
-                 document.querySelector('.check').style.paddingLeft='52.5px';
-                 document.querySelector('.check').style.paddingRight='52.5px';
-                 document.querySelector('.check').style.background='#ef000b';
-             }
-             if(inputEmail==='' || inputEmail.includes('@')===false || inputEmail.includes('.')===false){
-                 document.querySelector('.check').innerHTML="That's not a proper Email!";
-                 document.querySelector('.check').style.fontSize='15px';
-                 document.querySelector('.check').style.padding='10px 25px 10px 25px';
-                 document.querySelector('.check').style.textAlign='center';
-                 document.querySelector('.check').style.background='#4285f4';
-             }
-      };
+			   }else{
+			       document.querySelector('.check').innerHTML='You have a Basic Account!';
+			       document.querySelector('.check').style.background='#497fbc';
+			       document.querySelector('.check').style.fontSize='15px';
+			       document.querySelector('.check').style.padding='10px 25px 10px 25px';
+			       document.querySelector('.submit1').style.animation='unDisable 1s';
+			       setTimeout(function(){document.querySelector('.submit1').style.background='#4285f4';document.querySelector('.submit1').style.color='white';},1000);
+			       document.querySelector('.submit1').onclick = function(){
+								   setTimeout(function(){document.querySelector('.title2').innerHTML='S';},0);
+								   setTimeout(function(){document.querySelector('.title2').innerHTML='St';},100);
+								   setTimeout(function(){document.querySelector('.title2').innerHTML='Ste';},200);
+								   setTimeout(function(){document.querySelector('.title2').innerHTML='Step';},300);
+								   setTimeout(function(){document.querySelector('.title2').innerHTML='Step ';},400);
+								   setTimeout(function(){document.querySelector('.title2').innerHTML='Step 2';},500);
+								   setTimeout(function(){document.querySelector('.title2').innerHTML='Step 2.';},600);
+								   document.querySelector('.loginBox').innerHTML='<br><br>'+
+									  '<img width="20%" style="margin-top:4%;" src="https://nhnet.github.io/img/GoogleLogo.png">'+
+									  '<div style="margin-left:20%;margin-top:-5.5%;font-size:15px">, &nbsp;in collaboration with <span style="font-weight:bolder;">🌐NH Net Browser</span></div>'+
+									  '<br><br>'+
+									  '<h1 class="title1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:40px">Signup</h1><br>'+
+									  '<h1 class="title2" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:25px">S</h1>'+
+									  '<br><br><br>'+
+									  '<h1 class="point1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:20px">'+
+										 'Press the button below to complete the signup:<br>'+
+										 '<div class="g-signin2" data-onsuccess="verifyMyUser" data-onfailure="onFail"></div>'+
+									  '</h1>'+
+								   '</div>';
+						   }
+			   }
+		     }else{
+			 document.querySelector('.check').innerHTML='This email does not have an account saved for it!<br>Ask the creator of this browser<br>to add you to the list!';
+			 document.querySelector('.check').style.fontSize='12px';
+			 document.querySelector('.check').style.textAlign='center';
+			 document.querySelector('.check').style.paddingLeft='52.5px';
+			 document.querySelector('.check').style.paddingRight='52.5px';
+			 document.querySelector('.check').style.background='#ef000b';
+		     }
+		     if(inputEmail==='' || inputEmail.includes('@')===false || inputEmail.includes('.')===false){
+			 document.querySelector('.check').innerHTML="That's not a proper Email!";
+			 document.querySelector('.check').style.fontSize='15px';
+			 document.querySelector('.check').style.padding='10px 25px 10px 25px';
+			 document.querySelector('.check').style.textAlign='center';
+			 document.querySelector('.check').style.background='#4285f4';
+		     }
+	      };
+	},20);
 }
 setTimeout(
     function() {

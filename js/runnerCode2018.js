@@ -6,9 +6,9 @@ loadScript("https://nhnet.github.io/management/private/Accounts/accounts.js");
 loadScript("https://apis.google.com/js/platform.js");
 loadScript("https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js");
 
-document.body.addEventListener("keyup", function(event) {
-    event.preventDefault();
-    if (event.keyCode === 13) {
+$(document).keypress(function(e) {
+    var keycode = (e.keyCode ? e.keyCode : e.which);
+    if (keycode == '13') {
         document.querySelector(".submit").click();
 	document.querySelector(".check").click();
 	document.querySelector(".submit1").click();

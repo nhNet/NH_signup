@@ -119,7 +119,7 @@ function verifyMyUser(googleUser) {
             document.body.style.backgroundSize = '1366px 768px';
             document.body.style.color = 'white';
             document.body.style.paddingTop = '20%';
-            document.body.innerHTML = '<img style="background:url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg) no-repeat; background-size:200px 200px;margin-top:-13%;margin-left:27.33333333333333%;border-radius:100%" height="200px" width="200px" src="' + profileImg + '">' +
+            document.body.innerHTML = '<img style="border:2px solid white;background:url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg) no-repeat; background-size:200px 200px;margin-top:-13%;margin-left:27.33333333333333%;border-radius:100%" height="200px" width="200px" src="' + profileImg + '">' +
                 '<h1 style="font-size:100px;margin-top:-16%;margin-left:45.333333333333333%;">' + firstName + '</h1>' +
                 '<img style="margin-left:46.6%;margin-top:-50px" width="80px" src="https://nhnet.github.io/NH_login/img/load.gif"><br><br>' +
                 '<h1 style="margin-top:-20px;text-align:center">You have already signed up.<br><br>Loading NH Net Login Page...</h1>';

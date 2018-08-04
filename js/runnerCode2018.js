@@ -119,8 +119,8 @@ function verifyMyUser(googleUser) {
             document.body.style.backgroundImage = 'none';
             document.body.style.color = 'white';
             document.body.style.paddingTop = '20%';
-            document.body.innerHTML = '<img style="margin-top:-13%;margin-left:17%;border-radius:100%" height="200px" width="200px" src="' + profileImg + '">' +
-                '<h1 style="font-size:100px;margin-top:-16%;margin-left:35%;">' + firstName + '</h1>' +
+            document.body.innerHTML = '<img style="margin-top:-13%;margin-left:27.33333333333333%;border-radius:100%" height="200px" width="200px" src="' + profileImg + '">' +
+                '<h1 style="font-size:100px;margin-top:-16%;margin-left:45.333333333333333%;">' + firstName + '</h1>' +
                 '<img style="margin-left:46.6%;margin-top:-50px" width="80px" src="https://nhnet.github.io/NH_login/img/load.gif"><br><br>' +
                 '<h1 style="margin-top:-20px;text-align:center">You have already signed up.<br><br>Loading NH Net Login Page...</h1>';
             setTimeout(function() {

@@ -63,27 +63,7 @@ document.querySelector('.submit').onclick = function() {
 			       document.querySelector('.submit1').style.animation='unDisable 1s';
 			       setTimeout(function(){document.querySelector('.submit1').style.background='#4285f4';document.querySelector('.submit1').style.color='white';},1000);
 			       document.querySelector('.submit1').onclick = function(){
-				   setTimeout(function(){
-					   setTimeout(function(){document.querySelector('.title2').innerHTML='S';},0);
-					   setTimeout(function(){document.querySelector('.title2').innerHTML='St';},100);
-					   setTimeout(function(){document.querySelector('.title2').innerHTML='Ste';},200);
-					   setTimeout(function(){document.querySelector('.title2').innerHTML='Step';},300);
-					   setTimeout(function(){document.querySelector('.title2').innerHTML='Step ';},400);
-					   setTimeout(function(){document.querySelector('.title2').innerHTML='Step 2';},500);
-					   setTimeout(function(){document.querySelector('.title2').innerHTML='Step 2.';},600);
-					   document.querySelector('.loginBox').innerHTML='<br><br>'+
-					      '<img width="20%" style="margin-top:4%;" src="https://nhnet.github.io/img/GoogleLogo.png">'+
-					      '<div style="margin-left:20%;margin-top:-5.5%;font-size:15px">, &nbsp;in collaboration with <span style="font-weight:bolder;">🌐NH Net Browser</span></div>'+
-					      '<br><br>'+
-					      '<h1 class="title1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:40px">Signup</h1><br>'+
-					      '<h1 class="title2" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:25px">S</h1>'+
-					      '<br><br><br>'+
-					      '<h1 class="point1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:20px">'+
-						 'Press the button below to complete the signup:<br>'+
-					      '</h1>'+
-					      '<div class="g-signin2" data-onsuccess="verifyMyUser" data-onfailure="onFail"></div>'+
-					   '</div>';
-				   },30);
+				   window.location='1';
 			       }
 
 			   }else{

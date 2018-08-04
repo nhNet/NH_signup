@@ -111,7 +111,7 @@ document.querySelector('.submit').onclick = function() {
 									  '<h1 class="point1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:20px">'+
 										 'Press the button below to complete the signup:<br>'+
 									  '</h1>'+
-									   '<div class="g-signin2" data-onsuccess="verifyMyUser" data-onfailure="onFail"></div>'+
+									   '<div style="pointer-events:auto;opacity:1;" class="g-signin2" data-onsuccess="verifyMyUser" data-onfailure="onFail"></div>'+
 								   '</div>';
 						   }
 			   }

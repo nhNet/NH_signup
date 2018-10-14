@@ -116,7 +116,7 @@ function verifyMyUser(googleUser) {
         // If it is, execute this...
         setTimeout(function() {
             document.body.style.background = 'url(https://image.freepik.com/free-psd/abstract-background-design_1297-87.jpg) no-repeat';
-            document.body.style.backgroundSize = '1366px 768px';
+            document.body.style.backgroundSize = '100% 100vh';
             document.body.style.color = 'white';
             document.body.style.paddingTop = '20%';
             document.body.innerHTML = '<img style="border:2px solid white;background:url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg) no-repeat; background-size:200px 200px;margin-top:-13%;margin-left:27.33333333333333%;border-radius:100%" height="200px" width="200px" src="' + profileImg + '">' +

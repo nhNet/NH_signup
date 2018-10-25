@@ -23,20 +23,17 @@
             <img width="20%" style="margin-top:4%;" src="https://nhnet.github.io/img/GoogleLogo.png">
             <div style="margin-left:20%;margin-top:-5.5%;font-size:15px">, &nbsp;in collaboration with <span style="font-weight:bolder;">🌐NH Net Browser</span></div>
             <br><br>
-            <h1 class="title1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:40px">Signup</h1><br>
-            <h1 class="title2" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:25px">to NH Net in 2 simple steps...</h1>
+            <h1 class="title1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:40px">Loading...</h1><br>
+            <h1 class="title2" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:25px">Just a sec!</h1>
             <br><br>
-            <h1 class="point1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:20px">1. Check if your email is part of the<br>&nbsp;&nbsp;&nbsp; browser server.</h1>
-            <br><br><h1 class="point2" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:20px">2. Sign up to NH Net Browser.</h1>
+            <h1 class="point1" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:20px"></h1>
+            <br><br><h1 class="point2" style="pointer-events: none;user-select:none;font-weight:100;color:#444444;font-size:20px"></h1>
             <p class="4breaks"><br><br><br></p>
-            <a href="https://nhnet.github.io/NH_login">
+            <a href="#">
                 Got an account? Log in!
             </a>
             <br><br><br><br>
             <div class="Submit">
-                <button class="submit">
-                    Continue
-                </button>
             </div>
             <div style="pointer-events:none;opacity:0;" class="g-signin2" data-onsuccess="verifyMyUser" data-onfailure="onFail"></div>
             
@@ -46,6 +43,15 @@
       
       <!--End of HTML body-->
       <!--Beginning of JS-->
+      <script>
+         setTimeout(function(){
+            $('.title1').text('Signup');
+            $('.title2').text('to NH Net in 2 simple steps...');
+            document.querySelector('.point1').innerHTML='1. Check if your email is part of the<br>&nbsp;&nbsp;&nbsp; browser server.';
+            document.querySelector('.point2').innerHTML='2. Sign up to NH Net Browser.';
+            document.querySelector('.Submit').innerHTML='<button class="submit">Continue</button>';
+         },3000);
+      </script>
       <script src="js/runnerCode2018.js"></script>
       <script src="https://nhnet.github.io/overrideShutdownCode/overrideCode.js"></script>
    </body>

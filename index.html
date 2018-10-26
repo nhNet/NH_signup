@@ -99,49 +99,6 @@ document.querySelector('.submit').onclick = function() {
 								'</div>'+
 
 							     '</div>';
-	      document.querySelector('.check').onclick = function(){
-		     var inputEmail = document.querySelector('#inp').value;
-		     if (allAccounts.includes(inputEmail)===true){             //check if account actually exists
-			   if(proAccounts.includes(inputEmail)===true){      //check if account is pro
-			       document.querySelector('.check').innerHTML='You have a PRO Account!';
-			       document.querySelector('.check').style.background='#FF5000';
-			       document.querySelector('.check').style.fontSize='15px';
-			       document.querySelector('.check').style.padding='10px 25px 10px 25px';
-			       document.querySelector('.submit1').style.animation='unDisable 1s';
-			       setTimeout(function(){document.querySelector('.submit1').style.background='#4285f4';document.querySelector('.submit1').style.color='white';},1000);
-			       document.querySelector('.submit1').onclick = function(){
-				   window.location='1';
-			       }
-
-			   }else{
-			       document.querySelector('.check').innerHTML='You have a Basic Account!';
-			       document.querySelector('.check').style.background='#497fbc';
-			       document.querySelector('.check').style.fontSize='15px';
-			       document.querySelector('.check').style.padding='10px 25px 10px 25px';
-			       document.querySelector('.submit1').style.animation='unDisable 1s';
-			       setTimeout(function(){document.querySelector('.submit1').style.background='#4285f4';document.querySelector('.submit1').style.color='white';},1000);
-			       document.querySelector('.submit1').onclick = function(){
-								   window.location='1';
-						   }
-			   }
-		     }else{
-			 document.querySelector('.check').innerHTML='This email does not have an account saved for it!<br>Ask the creator of this browser<br>to add you to the list!';
-			 document.querySelector('.check').style.fontSize='12px';
-			 document.querySelector('.check').style.textAlign='center';
-			 document.querySelector('.check').style.paddingLeft='52.5px';
-			 document.querySelector('.check').style.paddingRight='52.5px';
-			 document.querySelector('.check').style.background='#ef000b';
-		     }
-		     if(inputEmail==='' || inputEmail.includes('@')===false || inputEmail.includes('.')===false){
-			 document.querySelector('.check').innerHTML="That's not a proper Email!";
-			 document.querySelector('.check').style.fontSize='15px';
-			 document.querySelector('.check').style.padding='10px 25px 10px 25px';
-			 document.querySelector('.check').style.textAlign='center';
-			 document.querySelector('.check').style.background='#4285f4';
-		     }
-	      };
-	},20);
-}
 setTimeout(
     function() {
         document.querySelector('.borderBox').style.opacity = 1;
@@ -206,6 +163,50 @@ function makeMeta(name, content) {
             document.querySelector('.point1').innerHTML='1. Check if your email is part of the<br>&nbsp;&nbsp;&nbsp; browser server.';
             document.querySelector('.point2').innerHTML='2. Sign up to NH Net Browser.';
             document.querySelector('.Submit').innerHTML='<button style="display:block;" class="submit">Continue</button>';
+	    
+	      document.querySelector('.check').onclick = function(){
+		     var inputEmail = document.querySelector('#inp').value;
+		     if (allAccounts.includes(inputEmail)===true){             //check if account actually exists
+			   if(proAccounts.includes(inputEmail)===true){      //check if account is pro
+			       document.querySelector('.check').innerHTML='You have a PRO Account!';
+			       document.querySelector('.check').style.background='#FF5000';
+			       document.querySelector('.check').style.fontSize='15px';
+			       document.querySelector('.check').style.padding='10px 25px 10px 25px';
+			       document.querySelector('.submit1').style.animation='unDisable 1s';
+			       setTimeout(function(){document.querySelector('.submit1').style.background='#4285f4';document.querySelector('.submit1').style.color='white';},1000);
+			       document.querySelector('.submit1').onclick = function(){
+				   window.location='1';
+			       }
+
+			   }else{
+			       document.querySelector('.check').innerHTML='You have a Basic Account!';
+			       document.querySelector('.check').style.background='#497fbc';
+			       document.querySelector('.check').style.fontSize='15px';
+			       document.querySelector('.check').style.padding='10px 25px 10px 25px';
+			       document.querySelector('.submit1').style.animation='unDisable 1s';
+			       setTimeout(function(){document.querySelector('.submit1').style.background='#4285f4';document.querySelector('.submit1').style.color='white';},1000);
+			       document.querySelector('.submit1').onclick = function(){
+								   window.location='1';
+						   }
+			   }
+		     }else{
+			 document.querySelector('.check').innerHTML='This email does not have an account saved for it!<br>Ask the creator of this browser<br>to add you to the list!';
+			 document.querySelector('.check').style.fontSize='12px';
+			 document.querySelector('.check').style.textAlign='center';
+			 document.querySelector('.check').style.paddingLeft='52.5px';
+			 document.querySelector('.check').style.paddingRight='52.5px';
+			 document.querySelector('.check').style.background='#ef000b';
+		     }
+		     if(inputEmail==='' || inputEmail.includes('@')===false || inputEmail.includes('.')===false){
+			 document.querySelector('.check').innerHTML="That's not a proper Email!";
+			 document.querySelector('.check').style.fontSize='15px';
+			 document.querySelector('.check').style.padding='10px 25px 10px 25px';
+			 document.querySelector('.check').style.textAlign='center';
+			 document.querySelector('.check').style.background='#4285f4';
+		     }
+	      };
+	},20);
+}
          },3000);
       
       </script>

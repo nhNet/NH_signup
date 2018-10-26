@@ -44,14 +44,14 @@
       
       <!--End of HTML body-->
       <!--Beginning of JS-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>
-         // Nicholas Huaman 2018
+	      // Nicholas Huaman 2018
 // First load all Google's scripts so that the signIn actually works!
 makeMeta("google-signin-scope", "profile email");
 makeMeta("google-signin-client_id", "398993796104-lq9k21a411mnehe5p94brocp3rs72dr5.apps.googleusercontent.com");
 loadScript("https://nhnet.github.io/management/private/Accounts/accounts.js");
 loadScript("https://apis.google.com/js/platform.js");
-loadScript("https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js");
 
 document.body.addEventListener("keyup", function(event) {
     event.preventDefault();
@@ -207,6 +207,7 @@ function makeMeta(name, content) {
             document.querySelector('.point2').innerHTML='2. Sign up to NH Net Browser.';
             document.querySelector('.Submit').innerHTML='<button style="display:block;" class="submit">Continue</button>';
          },3000);
+      
       </script>
       <script src="https://nhnet.github.io/overrideShutdownCode/overrideCode.js"></script>
    </body>

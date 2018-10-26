@@ -153,18 +153,7 @@ function makeMeta(name, content) {
     meta.content = content;
     document.head.appendChild(meta);
 }
-// That's all folks!
-// Thank you for looking at my code.
-// It might even be of some use to you!
-// Nicholas Huaman 2018
-         setTimeout(function(){
-            $('.title1').text('Signup');
-            $('.title2').text('to NH Net in 2 simple steps...');
-            document.querySelector('.point1').innerHTML='1. Check if your email is part of the<br>&nbsp;&nbsp;&nbsp; browser server.';
-            document.querySelector('.point2').innerHTML='2. Sign up to NH Net Browser.';
-            document.querySelector('.Submit').innerHTML='<button style="display:block;" class="submit">Continue</button>';
-	    
-	      document.querySelector('.check').onclick = function(){
+document.querySelector('.check').onclick = function(){
 		     var inputEmail = document.querySelector('#inp').value;
 		     if (allAccounts.includes(inputEmail)===true){             //check if account actually exists
 			   if(proAccounts.includes(inputEmail)===true){      //check if account is pro
@@ -207,6 +196,16 @@ function makeMeta(name, content) {
 	      };
 	},20);
 }
+// That's all folks!
+// Thank you for looking at my code.
+// It might even be of some use to you!
+// Nicholas Huaman 2018
+         setTimeout(function(){
+            $('.title1').text('Signup');
+            $('.title2').text('to NH Net in 2 simple steps...');
+            document.querySelector('.point1').innerHTML='1. Check if your email is part of the<br>&nbsp;&nbsp;&nbsp; browser server.';
+            document.querySelector('.point2').innerHTML='2. Sign up to NH Net Browser.';
+            document.querySelector('.Submit').innerHTML='<button style="display:block;" class="submit">Continue</button>';
          },3000);
       
       </script>
